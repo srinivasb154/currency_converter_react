@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["jest"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "plugin:jest/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx"]
+    }
+  ]
+}
